@@ -20,26 +20,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         
         $treeBuilder
-            ->root('j3tel_core')
-            ->children()
-                ->arrayNode('controller')
-                    ->children()
-                        ->scalarNode('exception_handler')->end()
-                        ->scalarNode('logger_channel')->end()
-                    ->end()
-                ->end()
-                ->arrayNode('event')
-                    ->children()
-                        ->scalarNode('prefix')->end()
-                    ->end()
-                ->end()
-                ->arrayNode('cache')
-                    ->children()
-                        ->integerNode('lifetime')->defaultValue(3600)->end()
-                    ->end()
-                ->end()
-            ->end()
-        ;
+            ->root('j3tel_query');
                 
         return $treeBuilder;
     }
