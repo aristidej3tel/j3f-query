@@ -1,9 +1,9 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Operator\Select;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\AbstractOperator;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\OperatorInterface;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\Select\AliasableInterface;
+use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\QueryFilter\Operator\Select\AliasableInterface;
 
 class Alias extends AbstractOperator
 {

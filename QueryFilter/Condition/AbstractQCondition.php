@@ -1,8 +1,8 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Condition;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Condition\QConditionInterface;
-use J3tel\CoreBundle\Tools\QueryFilter\Commun\AbstractQueryFilter;
+use J3tel\QueryBundle\QueryFilter\Condition\QConditionInterface;
+use J3tel\QueryBundle\QueryFilter\Commun\AbstractQueryFilter;
 use Doctrine\ORM\QueryBuilder;
 
 abstract class AbstractQCondition extends AbstractQueryFilter implements QConditionInterface

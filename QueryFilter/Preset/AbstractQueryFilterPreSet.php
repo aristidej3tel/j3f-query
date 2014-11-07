@@ -1,8 +1,8 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Preset;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Commun\AbstractQueryFilter;
-use J3tel\CoreBundle\Tools\QueryFilter\Commun\QueryFilterInterface;
+use J3tel\QueryBundle\QueryFilter\Commun\AbstractQueryFilter;
+use J3tel\QueryBundle\QueryFilter\Commun\QueryFilterInterface;
 
 abstract class AbstractQueryFilterPreSet extends AbstractQueryFilter implements QueryFilterInterface
 {

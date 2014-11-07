@@ -1,9 +1,9 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Condition\AbstractQCondition;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\OperatorInterface;
-use J3tel\CoreBundle\Exceptions\QueryFilter\OperatorException;
+use J3tel\QueryBundle\QueryFilter\Condition\AbstractQCondition;
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\Exceptions\OperatorException;
 use Doctrine\ORM\QueryBuilder;
 
 class GroupBy extends AbstractQCondition

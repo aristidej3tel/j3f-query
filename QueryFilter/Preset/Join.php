@@ -1,7 +1,7 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Preset;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Preset\AbstractQueryFilterPreSet;
+use J3tel\QueryBundle\QueryFilter\Preset\AbstractQueryFilterPreSet;
 
 class Join extends AbstractQueryFilterPreSet
 {

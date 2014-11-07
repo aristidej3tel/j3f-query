@@ -1,10 +1,10 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Selector;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Condition\AbstractQCondition;
+use J3tel\QueryBundle\QueryFilter\Condition\AbstractQCondition;
 use Doctrine\ORM\QueryBuilder;
-use J3tel\CoreBundle\Exceptions\QueryFilter\OperatorException;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\Exceptions\OperatorException;
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
 
 class Select extends AbstractQCondition
 {

@@ -1,9 +1,9 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Preset;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Preset\AbstractQueryFilterPreSet;
-use J3tel\CoreBundle\Tools\QueryFilter\Condition;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator;
+use J3tel\QueryBundle\QueryFilter\Preset\AbstractQueryFilterPreSet;
+use J3tel\QueryBundle\QueryFilter\Condition;
+use J3tel\QueryBundle\QueryFilter\Operator;
    
 class In extends AbstractQueryFilterPreSet
 {

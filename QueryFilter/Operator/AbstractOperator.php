@@ -2,8 +2,8 @@
 namespace J3tel\QueryBundle\QueryFilter\Operator;
 
 use Doctrine\ORM\QueryBuilder;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\OperatorInterface;
-use J3tel\CoreBundle\Tools\QueryFilter\Commun\AbstractQueryFilter;
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\QueryFilter\Commun\AbstractQueryFilter;
 
 abstract class AbstractOperator extends AbstractQueryFilter implements OperatorInterface
 {

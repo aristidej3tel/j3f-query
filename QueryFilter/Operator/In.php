@@ -1,7 +1,7 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Operator;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\AbstractOperator;
+use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
         
 class In extends AbstractOperator
 {

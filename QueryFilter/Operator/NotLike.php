@@ -1,8 +1,8 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Operator;
 
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\AbstractOperator;
-use J3tel\CoreBundle\Tools\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
 
 class NotLike extends AbstractOperator
 {
