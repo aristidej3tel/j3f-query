@@ -2,9 +2,7 @@
 namespace J3tel\QueryBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
-use Doctrine\ORM\QueryBuilder;
 use Doctrine\ORM\Mapping\ClassMetadata;
-use J3tel\QueryBundle\QueryFilter\QueryFilterInterface;
 
 class Repository extends EntityRepository
 {

@@ -1,6 +1,9 @@
 <?php
 namespace J3tel\QueryBundle\QueryFilter\Condition;
 
+use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
+use J3tel\QueryBundle\Exceptions\OperatorException;
+
 class OrHaving
 {
     protected $operator;

@@ -3,8 +3,8 @@ namespace J3tel\QueryBundle\QueryFilter;
 
 use J3tel\QueryBundle\Exceptions\OperatorException;
 use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
-use Doctrine\ORM\QueryBuilder;
 use J3tel\QueryBundle\QueryFilter\Condition\AbstractQCondition;
+use Doctrine\ORM\QueryBuilder;
 
 class AddGroupBy extends AbstractQCondition
 {
