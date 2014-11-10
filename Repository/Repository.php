@@ -27,8 +27,10 @@ class Repository extends EntityRepository
         return $query;
     }
 
-    public function count()
+    public function count($queryFilters = array())
     {
+        $this->queryFilters = array_merge($this->queryFiltersn, $queryFilters);
+        
         $query = $this->createQueryBuilderQf('r');
         
         $query->select($query->expr()->count('r.id'));
@@ -36,8 +38,10 @@ class Repository extends EntityRepository
         return $query->getQuery()->getSingleScalarResult();
     }
     
-    public function findOneQf()
+    public function findOneQf($queryFilters = array())
     {
+        $this->queryFilters = array_merge($this->queryFiltersn, $queryFilters);
+        
         $query = $this->createQueryBuilderQf('r');
         
         return $query
@@ -45,8 +49,10 @@ class Repository extends EntityRepository
             ->getSingleResult($this->mode);
     }
 
-    public function findQf($limit = null, $offset = null)
+    public function findQf($limit = null, $offset = null, $queryFilters = array())
     {
+        $this->queryFilters = array_merge($this->queryFiltersn, $queryFilters);
+        
         $query = $this->createQueryBuilderQf('r');
         if ($limit !== null) {
             $query->setMaxResults($limit);
