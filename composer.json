@@ -1,5 +1,5 @@
 {
-    "name": "j3telframework/core-bundle",
+    "name": "j3telframework/query-bundle",
     "type": "symfony-bundle",
     "description": "J3tel Symfony framework",
     "keywords": ["framework"],
