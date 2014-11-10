@@ -22,7 +22,7 @@
     },
 
     "autoload": {
-        "psr-0": { "J3tel\\CoreBundle": "" }
+        "psr-0": { "J3tel\\QueryBundle": "" }
     },
-    "target-dir": "J3tel/CoreBundle"
+    "target-dir": "J3tel/QueryBundle"
 }
