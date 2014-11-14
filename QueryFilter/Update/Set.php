@@ -3,7 +3,6 @@ namespace J3tel\QueryBundle\QueryFilter\Update;
 
 use J3tel\QueryBundle\QueryFilter\Condition\AbstractQCondition;
 use Doctrine\ORM\QueryBuilder;
-use J3tel\QueryBundle\Exceptions\OperatorException;
 use J3tel\QueryBundle\QueryFilter\Operator\OperatorInterface;
 
 class Set extends AbstractQCondition
