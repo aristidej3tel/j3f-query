@@ -1,16 +1,15 @@
 <?php
+namespace J3tel\QueryBundle\QueryFilter\Operator\Arithmetic;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
 
 /**
- * Description of Diff
- *
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * Soustraction
  */
-class Diff {
-    //put your code here
+class Diff extends AbstractOperator
+{
+    protected function getExpr(\Doctrine\ORM\QueryBuilder $queryBuilder)
+    {
+        return $queryBuilder->expr()->diff($this->prefix . '.' . $this->field, $this->bindFieldName);
+    }
 }

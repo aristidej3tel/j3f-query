@@ -1,16 +1,15 @@
 <?php
+namespace J3tel\QueryBundle\QueryFilter\Operator\Arithmetic;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
 
 /**
- * Description of Sum
- *
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * Addition
  */
-class Sum {
-    //put your code here
+class Sum extends AbstractOperator
+{
+    protected function getExpr(\Doctrine\ORM\QueryBuilder $queryBuilder)
+    {
+        return $queryBuilder->expr()->sum($this->prefix . '.' . $this->field, $this->bindFieldName);
+    }
 }
