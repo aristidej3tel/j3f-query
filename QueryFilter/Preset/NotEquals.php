@@ -18,7 +18,7 @@ class NotEquals extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\NotEquals($this->field, $this->value, $this->isFieldName)
+            new Operator\Comparison\NotEquals($this->field, $this->value, $this->isFieldName)
         );
         $filter->apply($queryBuilder);
     }

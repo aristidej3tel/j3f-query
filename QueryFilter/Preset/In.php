@@ -10,7 +10,7 @@ class In extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\In($this->field, $this->value)
+            new Operator\Comparison\In($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }

@@ -1,5 +1,5 @@
 <?php
-namespace J3tel\QueryBundle\QueryFilter\Operator;
+namespace J3tel\QueryBundle\QueryFilter\Operator\Comparison;
 
 use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
 use Doctrine\ORM\QueryBuilder;

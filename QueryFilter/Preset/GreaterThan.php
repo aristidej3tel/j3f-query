@@ -11,7 +11,7 @@ class GreaterThan extends AbstractQueryFilterPreSet
     protected function operate(QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\GreaterThan($this->field, $this->value)
+            new Operator\Comparison\GreaterThan($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }

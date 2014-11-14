@@ -17,7 +17,7 @@ class Equals extends AbstractQueryFilterPreSet
 
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder) {
         $filter = new Condition\AndX(
-            new Operator\Equals($this->field, $this->value, $this->isFieldName)
+            new Operator\Comparison\Equals($this->field, $this->value, $this->isFieldName)
         );
         $filter->apply($queryBuilder);
     }

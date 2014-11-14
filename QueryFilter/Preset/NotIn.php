@@ -10,7 +10,7 @@ class NotIn extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\NotIn($this->field, $this->value)
+            new Operator\Comparison\NotIn($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }

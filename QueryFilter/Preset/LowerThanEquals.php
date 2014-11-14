@@ -10,7 +10,7 @@ class LowerThanEquals extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\LowerThanEquals($this->field, $this->value)
+            new Operator\Comparison\LowerThanEquals($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }

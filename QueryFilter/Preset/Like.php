@@ -10,7 +10,7 @@ class Like extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\Like($this->field, $this->value)
+            new Operator\Comparison\Like($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }

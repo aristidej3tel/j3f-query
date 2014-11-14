@@ -10,7 +10,7 @@ class NotLike extends AbstractQueryFilterPreSet
     protected function operate(\Doctrine\ORM\QueryBuilder &$queryBuilder)
     {
         $filter = new Condition\AndX(
-            new Operator\NotLike($this->field, $this->value)
+            new Operator\Comparison\NotLike($this->field, $this->value)
         );
         $filter->apply($queryBuilder);
     }
