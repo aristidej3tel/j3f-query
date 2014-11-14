@@ -1,5 +1,5 @@
 <?php
-namespace J3tel\QueryBundle\QueryFilter\Operator\Select;
+namespace J3tel\QueryBundle\QueryFilter\Operator\Selector;
 
 use J3tel\QueryBundle\QueryFilter\Operator\AbstractOperator;
 

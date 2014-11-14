@@ -1,5 +1,5 @@
 <?php
-namespace J3tel\QueryBundle\QueryFilter\Selector;
+namespace J3tel\QueryBundle\QueryFilter\Select;
 
 use J3tel\QueryBundle\QueryFilter\Condition\AbstractQCondition;
 use Doctrine\ORM\QueryBuilder;
